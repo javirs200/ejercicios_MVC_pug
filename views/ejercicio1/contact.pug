@@ -3,11 +3,13 @@ html
     title= "Conocenos"
   link(rel="stylesheet", href="style.css")
   body
+    header 
+      include includes/navbar.pug
+    main
+      h1="Conocenos"
 
-    h1="Conocenos"
+      a(href=githubJavi) 
+        img(src=imageJavi, alt="javirs200" )
 
-    a(href=githubJavi) 
-      img(src=imageJavi, alt="javirs200" )
-
-    a(href=githubAlejandro)
-      img(src=imgAlejandro, alt="alejandroFMA")  
+      a(href=githubAlejandro)
+        img(src=imgAlejandro, alt="alejandroFMA")  
