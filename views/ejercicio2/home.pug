@@ -1,13 +1,15 @@
 doctype html
 html
    head
-      title = "Film Details"
+      title= "Film Details"
       link(rel="stylesheet", href="style.css")
    body
-      p Introduce a title of a film 
-        input.search(
+      form(action="/film", method="get") 
+         label(for='titile') Introduce a title of a film 
+         input.search(
             type='text'
-             name='search'
-            placeholder='Enter a title...'  )
+            name='title'
+            placeholder='Enter a title...')
+         input(type='submit')
                                                       
 
