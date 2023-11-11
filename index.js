@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = process.env.port || 3000 // vercel port requeriments
 
 app.use(express.json())
 app.use(express.static('public'));
@@ -32,4 +32,4 @@ app.listen(port, () => { //puerto por donde sale la respuesta a la peticion
     console.log(`Example app listening on port on http://localhost:${port}`);
   })
 
-  
+module.exports = app
