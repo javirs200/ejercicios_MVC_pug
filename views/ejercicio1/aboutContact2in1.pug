@@ -1,0 +1,28 @@
+if render == 'about'
+   html
+      head
+         title= "About"
+      body
+      header 
+         include ../includes/navbar.pug
+      main
+         link(rel="stylesheet", href="style.css")
+         h1="sobre este proyecto"
+
+         article= "ESTO ES UN PROYECTO POR PAREJAS SOBRE EL USO DE NODE, PUG Y LA ORDENACION DE CARPETAS PARA LAS BUENAS PRACTICAS"
+else if render == 'contact'
+   html
+      head
+         title= "Conocenos"
+         link(rel="stylesheet", href="style.css")
+      body
+         header 
+            include ../includes/navbar.pug
+         main
+            h1="Conocenos"
+
+            a(href=githubJavi) 
+               img(src=imageJavi, alt="javirs200" )
+
+            a(href=githubAlejandro)
+               img(src=imgAlejandro, alt="alejandroFMA")  
