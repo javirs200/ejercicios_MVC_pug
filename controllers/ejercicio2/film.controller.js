@@ -1,5 +1,4 @@
 let getFilm = require('../../utils/fetchFilms')
-const fetch = require("node-fetch");
 
 const getTitle = async (req, res) =>{
 

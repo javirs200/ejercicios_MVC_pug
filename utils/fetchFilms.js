@@ -1,5 +1,5 @@
 const dotenv = require('dotenv');
-const node_fetch = require('node-fetch')
+const fetch = require("node-fetch");
 
 dotenv.config()
 
