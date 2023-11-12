@@ -8,7 +8,7 @@ const getTitle = async (req, res) =>{
 
     if(titulo){
 
-        let details = await getFilm(titulo)
+        let details = JSON.stringify(await getFilm(titulo))
         
         if(details != null){
             console.log('renderizando planitlla');
