@@ -4,6 +4,7 @@ const port = process.env.port || 3000 // vercel port requeriments
 
 app.use(express.json())
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }));
 
 const ejercicio1Router = require('./routes/ejercicio1Router.routes')
 const ejercicio2Router = require('./routes/ejercicio2Router.routes')

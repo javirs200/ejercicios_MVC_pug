@@ -4,11 +4,12 @@ html
       title= "Film Details"
       link(rel="stylesheet", href="style.css")
    body
-      form(action="/film", method="get") 
+      form(action="/film", method="POST") 
          label(for='titile') Introduce a title of a film 
          input.search(
             type='text'
             name='title'
+            id='title'
             placeholder='Enter a title...')
          input(type='submit')
                                                       
